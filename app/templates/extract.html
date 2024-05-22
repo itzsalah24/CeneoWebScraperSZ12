@@ -8,7 +8,7 @@
     {% endif %}
     <h2 class ="container text-center">Extract Opinions</h2>
     <form class ="container mt-3" method="POST" action = "{{url_for('extract')}}">
-        <div class="row g-3 align-items-center">
+        <div class="row g-3 justify-content-center align-items-center">
             <div class="col-auto">
                 <label for="product_id" class="col-form-label">Product code</label>
             </div>
@@ -19,7 +19,7 @@
                 <span id="product_idHelpInline" class="form-text">Product ID Must be 5-10 digits long.</span>
             </div>
             <div class="col-auto">
-                <button id="submit" class="btn btn-outline-primary">Extract</span>
+                <button id="submit" class="btn btn-outline-dark">Extract</span>
             </div>
         </div>
     </form>  

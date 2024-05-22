@@ -13,24 +13,28 @@
     <header class ="container text-center">
         <h1 class="display-1">Ceneo.pl Web Scraper</h1>
     </header>
-    <nav class ="container">
-        <ul class = "row">
-            <li class = "col-3">
-                <a href ="{{url_for('index')}}"> Main Page</a>
-            </li>
-            <li class = "col-3">
-                <a href ="{{url_for('extract')}}"> Extract Options</a>
-            </li>
-            <li class = "col-3">
-                <a href ="{{url_for('products')}}"> List Products</a>
-            </li>
-            <li class = "col-3">
-                <a href ="{{url_for('author')}}"> About Author</a>
-            </li>
-        </ul>
-
+    <nav class="navbar navbar-expand-lg container">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('index') }}"><i class="bi bi-house-fill"></i> Main page</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('extract') }}"><i class="bi bi-cloud-download-fill"></i> Extract opinions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('products') }}"><i class="bi bi-list-stars"></i> List of products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('author') }}"><i class="bi bi-person-circle"></i> About author</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
-    <section class="container">
+
+    <section class="container text-center">
         <div class ="row">
             <div class="col">
                 {% block content %}
